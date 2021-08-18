@@ -1,0 +1,750 @@
+:root {
+  --text-color: #303030;
+  --second-text-color: #555555;
+  --line-color: rgba(157, 164, 189, 0.6);
+  --hover-color: #ff6c00;
+}
+
+body {
+  /* background-color: #000; */
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Raleway;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Open Sans";
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Header */
+
+.header {
+  display: flex;
+  /* margin-left: 55px; */
+}
+
+.first-header-container {
+  width: 155px;
+  height: 680px;
+  margin-left: auto;
+}
+
+.logo {
+  margin-top: 32px;
+  margin-left: 40px;
+}
+
+.first-header-list {
+  margin-top: 298px;
+  /* transform: rotate(-90deg); */
+  flex-direction: column;
+}
+
+.first-header-item {
+  transform: rotate(-90deg);
+}
+
+.first-header-item:not(:last-child) {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: var(--text-color);
+}
+
+.header-instagram {
+  margin-top: 100px;
+}
+
+.header-line {
+  margin-top: 131px;
+  margin-left: 48px;
+  height: 1px;
+  width: 60px;
+  background-color: var(--text-color);
+}
+/* Right */
+
+.second-header-container {
+  background: url(photo/first-header-bgi.png);
+  width: 1125px;
+  height: 680px;
+  margin-right: auto;
+}
+
+.second-header-list {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 52px;
+}
+
+/* .second-header-item {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+} */
+
+.second-header-item-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.second-header-item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.second-header-item-text:hover {
+  color: var(--hover-color);
+}
+
+.right-header-container {
+  display: flex;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: 322px;
+  align-items: center;
+}
+
+.header-phone {
+  margin-top: 44px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-button {
+  margin-left: 40px;
+  margin-top: 40px;
+  width: 160px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--hover-color);
+  border-radius: 30px;
+  background: none;
+}
+
+.header-button-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-title-container {
+  margin-left: 100px;
+  margin-top: 204px;
+}
+
+.header-title-list {
+  display: flex;
+}
+
+.header-title-line {
+  width: 60px;
+  height: 1px;
+  background: var(--line-color);
+  position: relative;
+  top: 6px;
+}
+
+.right-title-list-text {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--line-color);
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.header-title-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.header-photo-lines {
+  position: absolute;
+  left: 1207px;
+  top: 325px;
+}
+
+.header-photo-lines-item:not(:first-child) {
+  margin-top: 12px;
+}
+
+.first-photo-line {
+  height: 2px;
+  width: 18px;
+  background: #9da4bd;
+}
+
+.second-photo-line {
+  height: 2px;
+  width: 8px;
+  background: #9da4bd;
+  margin-left: auto;
+}
+
+.third-photo-line {
+  height: 2px;
+  width: 8px;
+  background: #9da4bd;
+  margin-left: auto;
+}
+
+.header-switch {
+  margin-top: 142px;
+  display: flex;
+  margin-left: 924px;
+}
+
+.switch-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: var(--line-color);
+}
+
+.header-switch-item:not(:first-child) {
+  margin-left: 26px;
+  text-align: right;
+}
+
+.switch-line {
+  height: 1px;
+  width: 60px;
+  background: var(--line-color);
+  margin-top: 8px;
+}
+
+/* Better-barbershop */
+
+.better-bsh {
+  margin-top: 130px;
+}
+
+.better-bsh-container {
+  display: flex;
+}
+
+.second-bbsh-photo {
+  margin-left: 30px;
+}
+
+.better-bsh-list {
+  display: flex;
+  align-items: center;
+}
+
+.better-bsh-line {
+  width: 60px;
+  height: 1px;
+  background: var(--text-color);
+  align-items: center;
+}
+
+.better-bsh-list-text {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.second-bbsh-container {
+  margin-left: 64px;
+  width: 500px;
+}
+
+.better-bsh-title {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: var(--text-color);
+}
+
+.first-bbsh-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.second-bbsh-text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.bbsh-button {
+  margin-top: 40px;
+  width: 160px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--hover-color);
+  border-radius: 30px;
+  background: none;
+}
+
+.bbsh-button-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+/* How much this cost? */
+
+.price-section {
+  background: url(photo/price-bgi.png), #111319;
+  height: 718px;
+  margin-top: 134px;
+}
+
+.title-price-list {
+  display: flex;
+  padding-top: 130px;
+  align-items: center;
+}
+
+.title-price-line {
+  width: 60px;
+  height: 1px;
+  background: var(--line-color);
+}
+
+.title-price-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--line-color);
+  margin-left: 20px;
+}
+
+.price-title {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.price-container {
+  display: flex;
+  margin-top: 44px;
+}
+
+.first-price-list {
+  padding: 30px 40px;
+  /* background: linear-gradient(
+    90deg,
+    #9da4bd,
+    #9da4bd 12%,
+    #000000 100%,
+    #000000 20%,
+    #171a24
+  ); */
+}
+
+.price-item {
+  display: flex;
+  align-items: center;
+}
+
+.price-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.price-list-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--line-color);
+}
+
+.first-price-line {
+  height: 1px;
+  width: 235px;
+  margin-left: 6px;
+  margin-top: 17px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.second-price-line {
+  height: 1px;
+  width: 242px;
+  margin-left: 6px;
+  margin-top: 17px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.third-price-line {
+  height: 1px;
+  width: 271px;
+  margin-left: 6px;
+  margin-top: 17px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.forth-price-line {
+  height: 1px;
+  width: 165px;
+  margin-left: 6px;
+  margin-top: 17px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.price-in-ua {
+  margin-left: 6px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--line-color);
+}
+
+.second-price-list {
+  padding: 30px 40px;
+}
+
+.fifth-price-line {
+  height: 1px;
+  width: 234px;
+  margin-left: 6px;
+  margin-top: 17px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.sixth-price-line {
+  height: 1px;
+  width: 202px;
+  margin-left: 6px;
+  margin-top: 17px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.seventh-price-line {
+  height: 1px;
+  width: 143px;
+  margin-left: 6px;
+  margin-top: 17px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.eighth-price-line {
+  height: 1px;
+  width: 163px;
+  margin-left: 6px;
+  margin-top: 17px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.price-button {
+  margin-top: 50px;
+  width: 160px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--hover-color);
+  border-radius: 30px;
+  background: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price-button-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Why clients come to us? */
+
+.visit-section {
+  padding-top: 121px;
+  padding-bottom: 130px;
+}
+
+.visit-container {
+  display: flex;
+  padding-left: 100px;
+}
+
+.visit-list {
+  display: flex;
+}
+
+.visit-item {
+  width: 170px;
+  height: 133px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.visit-item:nth-child(2n) {
+  margin-top: 30px;
+}
+
+.visit-item:first-child {
+  margin-right: 30px;
+}
+
+.second-visit-list-container {
+  margin-top: 37px;
+}
+
+.visit-number {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  letter-spacing: 0.05em;
+  color: var(--text-color);
+}
+
+.visit-plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--hover-color);
+  position: relative;
+  bottom: 28px;
+}
+
+.visit-text {
+  margin-top: 6px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-color);
+}
+
+.second-visit-container {
+  margin-left: 130px;
+}
+
+.visit-title-list {
+  display: flex;
+  align-items: center;
+}
+
+.visit-line {
+  height: 1px;
+  width: 60px;
+  background: var(--text-color);
+}
+
+.visit-title-item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.visit-title-item:last-child {
+  margin-left: 20px;
+}
+
+.visit-title {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: var(--text-color);
+}
+
+.visit-title-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* Our masters */
+
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #f7f7f7;
+}
+
+.masters-title-list {
+  display: flex;
+  align-items: center;
+}
+
+.masters-line {
+  height: 1px;
+  width: 60px;
+  background: var(--text-color);
+}
+
+.masters-title-item {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.masters-title {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: var(--text-color);
+}
+
+.masters-list {
+  display: flex;
+  margin-top: 44px;
+  text-align: center;
+}
+
+.masters-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.masters-name {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.type-of-work {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: var(--hover-color);
+}
+
+.masters-soc-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.masters-soc-item:not(:first-child) {
+  margin-left: 34px;
+}
+
+.icon:hover .svg-icon {
+  fill: var(--hover-color);
+}
+
+/* Barba in latin */
+
+.latin-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.latin-list {
+  display: flex;
+  align-items: center;
+}
+
+.latin-line {
+  height: 1px;
+  width: 60px;
+  background-color: var(--text-color);
+}
+
+.latin-item {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.latin-photo-container {
+  margin-top: 44px;
+}
+
+.latin-image {
+  max-width: 266px;
+}
+
+.latin-image:not(:first-child) {
+  margin-left: 30px;
+}
